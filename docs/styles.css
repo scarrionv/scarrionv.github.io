@@ -1,3 +1,7 @@
+:root {
+    --maincolor: #ABC4FF;
+}
+
 *, ::after, ::before {
     margin: 0;
     padding: 0;
@@ -32,7 +36,6 @@ body {
     box-sizing: border-box;
     position: relative;
     line-height: 1.5;
-    font-family: sans-serif;
     overflow-x: hidden;
     overflow-y: scroll;
     font-family: 'Source Sans Pro', sans-serif
@@ -114,7 +117,7 @@ textarea {
 
 .heading-sec__main--lt::after {
     content: '';
-    background: #facf0f !important
+    background: var(--maincolor) !important
 }
 
 .heading-sec__main::after {
@@ -123,7 +126,7 @@ textarea {
     top: calc(100% + 1.5rem);
     height: 5px;
     width: 3rem;
-    background: #facf0f;
+    background: var(--maincolor);
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px
@@ -144,6 +147,13 @@ textarea {
     max-width: 80rem;
     margin: auto;
     line-height: 1.6
+}
+
+.heading-sec__sub a {
+    text-decoration: underline;
+    font-weight: 700;
+    color: var(--maincolor);
+    margin: 0 3px;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -169,7 +179,7 @@ textarea {
 }
 
 .btn {
-    background: #facf0f;
+    background: var(--maincolor);
     color: #333;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -195,14 +205,14 @@ textarea {
 }
 
 .btn--theme {
-    background: #facf0f;
+    background: var(--maincolor);
     color: #111
 }
 
 .btn--theme-inv {
     color: #111;
     background: #fff;
-    border: 2px solid #facf0f;
+    border: 2px solid var(--maincolor);
     box-shadow: none;
     padding: calc(1.5rem - 2px) calc(5rem - 2px)
 }
@@ -237,7 +247,6 @@ textarea {
 
 .home-hero {
     color: #fff;
-    background: linear-gradient(to right, rgba(245, 245, 245, .8), rgba(245, 245, 245, .8)), url(/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
     background-position: center;
     height: 100vh;
     min-height: 80rem;
@@ -293,7 +302,7 @@ textarea {
 }
 
 .home-hero__social-icon-link:hover {
-    background: rgba(250, 207, 15, .2)
+    background: rgba(171, 196, 255, 0.2)
 }
 
 .home-hero__social-icon-link--bd-none {
@@ -381,7 +390,7 @@ textarea {
 .about__content-details-para a {
     text-decoration: underline;
     font-weight: 700;
-    color: #facf0f;
+    color: var(--maincolor);
     margin: 0 3px
 }
 
@@ -462,7 +471,6 @@ textarea {
 }
 
 .contact {
-    background: linear-gradient(to right, rgba(245, 245, 245, .8), rgba(245, 245, 245, .8)), url(/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
     background-size: cover;
     background-position: center
 }
@@ -481,7 +489,6 @@ textarea {
 
 .project-cs-hero {
     color: #fff;
-    background: linear-gradient(to right, rgba(245, 245, 245, .8), rgba(245, 245, 245, .8)), url(/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg);
     background-size: cover;
     background-position: center;
     position: relative
@@ -642,7 +649,7 @@ textarea {
 }
 
 .header__logo-container:hover {
-    color: #facf0f
+    color: var(--maincolor)
 }
 
 .header__logo-img-cont {
@@ -651,7 +658,7 @@ textarea {
     border-radius: 50px;
     overflow: hidden;
     margin-right: 1.5rem;
-    background: #facf0f
+    background: var(--maincolor)
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -665,8 +672,8 @@ textarea {
 .header__logo-img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
+    -o-object-fit: contain;
+    object-fit: contain;
     -o-object-position: center;
     object-position: center;
     display: block
@@ -701,7 +708,7 @@ textarea {
 }
 
 .header__link:hover {
-    color: #facf0f
+    color: var(--maincolor)
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -771,7 +778,7 @@ textarea {
 }
 
 .header__sm-menu-link a:hover {
-    color: #facf0f
+    color: var(--maincolor)
 }
 
 .header__sm-menu-link:first-child a {
